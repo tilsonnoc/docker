@@ -13,8 +13,8 @@
 			"logo": "https://jelastic.com/blog/wp-content/uploads/2017/09/Eclipse-Mosquitto-logo.png",
 			"platform": "linux",
 			"repository": {
-				"url": "https://github.com/tilsonnoc/collector",
-				"stackfile": "Portainer/stack/MQTT/docker-stack.yml"
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/MQTT/docker-stack.yml"
 			},
 			"env": [{
 				"name": "env_Name",
@@ -36,8 +36,8 @@
 			"logo": "https://www.pngkey.com/png/detail/1-13458_free-png-smoke-png-images-transparent-smoke-png.png",
 			"platform": "linux",
 			"repository": {
-				"url": "https://github.com/tilsonnoc/collector",
-				"stackfile": "Portainer/stack/smokeping/docker-stack.yml"
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/smokeping/docker-stack.yml"
 			},
 			"env": [{
 				"name": "smokeport",
@@ -59,8 +59,8 @@
 			"logo": "https://cdn-ak.f.st-hatena.com/images/fotolife/d/daichi703n/20190316/20190316180848.png",
 			"platform": "linux",
 			"repository": {
-				"url": "https://github.com/tilsonnoc/collector",
-				"stackfile": "Portainer/stack/elastiflow/docker-stack.yml"
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/elastiflow/docker-stack.yml"
 			},
 			"env": [{
 				"name": "envelastiflow",
@@ -82,8 +82,8 @@
 			"logo": "https://assets-global.website-files.com/5e9fae47f9a5b161fc3f7024/5f69ecdab29e533a9f46b3ef_Graylog%20-%20Logo%20-%20Color.svg",
 			"platform": "linux",
 			"repository": {
-				"url": "https://github.com/tilsonnoc/collector",
-				"stackfile": "Portainer/stack/greylog/docker-stack.yml"
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/greylog/docker-stack.yml"
 			},
 			"env": [{
 				"name": "envgreylog",
@@ -105,8 +105,8 @@
 			"logo": "https://drivers-pack.ru/wp-content/uploads/2019/03/iperf.png",
 			"platform": "linux",
 			"repository": {
-				"url": "https://github.com/tilsonnoc/collector",
-				"stackfile": "Portainer/stack/iperf_web/docker-stack.yml"
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/iperf_web/docker-stack.yml"
 			},
 			"env": [{
 				"name": "enviperf_web",
@@ -129,8 +129,8 @@
 			"logo": "https://mosquitto.org/images/mosquitto-text-side-28.png",
 			"platform": "linux",
 			"repository": {
-				"url": "https://github.com/tilsonnoc/collector",
-				"stackfile": "Portainer/stack/mosquitto/docker-stack.yml"
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/mosquitto/docker-stack.yml"
 			},
 			"env": [{
 				"name": "envmosquitto",
@@ -153,8 +153,8 @@
 			"logo": "https://www.etecenter.com/images/wireshark.png",
 			"platform": "linux",
 			"repository": {
-				"url": "https://github.com/tilsonnoc/collector",
-				"stackfile": "Portainer/stack/wireshark/docker-stack.yml"
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/wireshark/docker-stack.yml"
 			},
 			"env": [{
 				"name": "envmwireshark",
@@ -176,8 +176,8 @@
 			"logo": "https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png",
 			"platform": "linux",
 			"repository": {
-				"url": "https://github.com/tilsonnoc/collector",
-				"stackfile": "Portainer/stack/zabbix_agent/docker-stack.yml"
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/zabbix_agent/docker-stack.yml"
 			},
 			"env": [{
 				"name": "envzabbix_agent",
@@ -199,8 +199,8 @@
 			"logo": "https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png",
 			"platform": "linux",
 			"repository": {
-				"url": "https://github.com/tilsonnoc/collector",
-				"stackfile": "Portainer/stack/zabbix_proxy/docker-stack.yml"
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/zabbix_proxy/docker-stack.yml"
 			},
 			"env": [{
 				"name": "envzabbix_proxy",
@@ -219,11 +219,11 @@
 			"categories": [
 				"NOC"
 			],
-			"logo": "https://www.portainer.io/hubfs/Brand%20Assets/Logos/Portainer%20Logo%20Solid%20All%20-%20Blue%20no%20padding.svg",
+			"logo": "https://www.portainer.io/hubfs/Brand%20Assets/Logos/portainer%20Logo%20Solid%20All%20-%20Blue%20no%20padding.svg",
 			"platform": "linux",
 			"repository": {
-				"url": "https://github.com/tilsonnoc/collector",
-				"stackfile": "Portainer/stack/portainer_agent/docker-stack.yml"
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/portainer_agent/docker-stack.yml"
 			},
 			"env": [{
 				"name": "envportainer_agenty",
@@ -233,6 +233,66 @@
 			}
 			]
 		}
+
+
+		{
+			"type": 3,
+			"title": "Grafana",
+			"description": "Grafana",
+			"note": "Grafana  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://cdn.icon-icons.com/icons2/2699/PNG/512/grafana_logo_icon_171049.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/Grafana/docker-stack.yml"
+			},
+			"env": [{
+				"name": "port_grafana",
+				"label": "Port",
+				"description": "Use port 3000"
+			}
+			]
+		}
+
+
+		{
+			"type": 3,
+			"title": "influxdb",
+			"description": "influxdb",
+			"note": "influxdb  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Influxdb_logo.svg/1280px-Influxdb_logo.svg.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/influxDB/docker-stack.yml"
+			},
+			"env": [{
+				"name": "port_influxdb",
+				"label": "Port",
+				"description": "Use port 8086"
+			}
+
+			{
+				"name": "user_influxdb",
+				"label": "Username ",
+				"description": "admin"
+			}
+
+			{
+				"name": "pass_influxdb",
+				"label": "password ",
+				"description": "XXXXXX"
+			}
+			]
+		}
+
+
 
 	]
 }
