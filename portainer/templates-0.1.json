@@ -248,10 +248,42 @@
 				{
 					"name": "port_grafana",
 					"label": "Port",
-					"description": "Use port 3000"
+					"description": "Use port 3000",
+					"set": "3000"
+				}
+			]
+		},
+		{
+			"type": 3,
+			"title": "influxdb",
+			"description": "influxdb",
+			"note": "influxdb",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Influxdb_logo.svg/1280px-Influxdb_logo.svg.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/influxdb/docker-stack.yml"
+			},
+			"env": [
+				{
+					"name": "port_influxdb",
+					"label": "Port",
+					"description": "Use port 8086"
+				},
+				{
+					"name": "user_influxdb",
+					"label": "Username ",
+					"description": "admin"
+				},
+				{
+					"name": "pass_influxdb",
+					"label": "password ",
+					"description": "XXXXXX"
 				}
 			]
 		}
-		
 	]
 }
