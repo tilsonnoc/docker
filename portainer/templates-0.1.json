@@ -255,8 +255,8 @@
 		},
 		{
 			"type": 3,
-			"title": "influxdb",
-			"description": "influxdb",
+			"title": "influxdb2",
+			"description": "influxdb 2",
 			"note": "influxdb",
 			"categories": [
 				"NOC"
@@ -265,7 +265,7 @@
 			"platform": "linux",
 			"repository": {
 				"url": "https://github.com/tilsonnoc/docker",
-				"stackfile": "portainer/stack/influxdb/docker-stack.yml"
+				"stackfile": "portainer/stack/influxdb2/docker-stack.yml"
 			},
 			"env": [
 				{
