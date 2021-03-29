@@ -8,4 +8,4 @@ services:
         image: grafana/grafana
 
         volumes:
-            - /opt/docker_data/grafana/data/grafana:/var/lib/grafana
+            - "/opt/docker_data/grafana/data:/var/lib/grafana"
