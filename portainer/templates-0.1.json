@@ -287,6 +287,97 @@
 					"set": "admin"
 				}
 			]
+		},
+
+
+		{
+			"type": 3,
+			"title": "unifipoller",
+			"description": "unifipoller",
+			"note": "influxdb",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://www.eduitguy.com/wp-content/uploads/2020/04/unifi-poller-logo.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/unifipoller/docker-stack.yml"
+			},
+			"env": [
+
+				{
+					"name": "port_unifipoller",
+					"label": "Port",
+					"description": "Use port 8888",
+					"set": "8888"
+				},
+
+
+				{
+					"name": "INFLUXDB_DB",
+					"label": "INFLUXDB_DB",
+					"description": "unifi"
+					
+				},
+				{
+					"name": "INFLUXDB_URL",
+					"label": "INFLUXDB_URL",
+					"description": "http://influxdb:8086"
+					
+				},
+				{
+					"name": "INFLUXDB_ADMIN_USER",
+					"label": "INFLUXDB_USERNAME",
+					"description": "admin"
+					
+				},
+				{
+					"name": "INFLUXDB_ADMIN_PASSWORD",
+					"label": "INFLUXDB_PASSWORD",
+					"description": "XXXXXX"
+					
+				},
+
+				{
+					"name": "UNIFI_USER",
+					"label": "UNIFI_DEFAULT_USER",
+					"description": "Unifi server username "
+					
+				},
+
+				{
+					"name": "UNIFI_PASS",
+					"label": "Unifi server pass",
+					"description": "XXXXXX"
+					
+				},
+
+				{
+					"name": "UNIFI_URL",
+					"label": "UNIFI_URL",
+					"description": "unifi.server.domain"
+					
+				},
+
+				{
+					"name": "POLLER_DEBUG",
+					"label": "POLLER_DEBUG",
+					"description": "false"
+					
+				},
+
+				{
+					"name": "POLLER_SAVE_DPI",
+					"label": "UNIFI_DEFAULT_SAVE_DPI",
+					"description": "false"
+					
+				}
+
+			]
 		}
+
+
+
 	]
 }
