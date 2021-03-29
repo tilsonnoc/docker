@@ -1,6 +1,7 @@
 version: '3.3'
 services:
     grafana:
+        user: "0"
         network_mode: cnet
         container_name: grafana
         ports:
