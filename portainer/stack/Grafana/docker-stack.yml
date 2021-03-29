@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+    grafana:
+        network_mode: cnet
+        container_name: grafana
+        ports:
+            - '3000:3000'
+        image: grafana/grafana
+
+
+        volumes:
+            - /opt/docker_data/grafana/data/grafana:/var/lib/grafana

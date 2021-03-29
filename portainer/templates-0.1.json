@@ -1,0 +1,238 @@
+{
+	"version": "2",
+	"templates": [
+		
+		{
+			"type": 3,
+			"title": "MQTT",
+			"description": "MQTT Server",
+			"note": "For sub and pub for mqtt ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://jelastic.com/blog/wp-content/uploads/2017/09/Eclipse-Mosquitto-logo.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/collector",
+				"stackfile": "Portainer/stack/MQTT/docker-stack.yml"
+			},
+			"env": [{
+				"name": "env_Name",
+				"label": "env_lable",
+				"description": "env_description"
+			}
+			]
+		},
+
+
+		{
+			"type": 3,
+			"title": "Smokeping",
+			"description": "Smokeping Server",
+			"note": "light ping server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://www.pngkey.com/png/detail/1-13458_free-png-smoke-png-images-transparent-smoke-png.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/collector",
+				"stackfile": "Portainer/stack/smokeping/docker-stack.yml"
+			},
+			"env": [{
+				"name": "smokeport",
+				"label": "http port number (86)",
+				"description": "Assign the port to acccess smokeping use 86",
+				"set": "86"
+			}
+			]
+		},
+
+		{
+			"type": 3,
+			"title": "elastiflow",
+			"description": "elastiflow Server",
+			"note": "elastiflow server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://cdn-ak.f.st-hatena.com/images/fotolife/d/daichi703n/20190316/20190316180848.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/collector",
+				"stackfile": "Portainer/stack/elastiflow/docker-stack.yml"
+			},
+			"env": [{
+				"name": "envelastiflow",
+				"label": "NA",
+				"description": "NA",
+				"set": "86"
+			}
+			]
+		},
+
+		{
+			"type": 3,
+			"title": "greylog",
+			"description": "greylog Server",
+			"note": "greylog server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://assets-global.website-files.com/5e9fae47f9a5b161fc3f7024/5f69ecdab29e533a9f46b3ef_Graylog%20-%20Logo%20-%20Color.svg",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/collector",
+				"stackfile": "Portainer/stack/greylog/docker-stack.yml"
+			},
+			"env": [{
+				"name": "envgreylog",
+				"label": "Web port (9006)",
+				"description": "To Access the server go to the http://IP:9006 ",
+				"set": "86"
+			}
+			]
+		},
+
+		{
+			"type": 3,
+			"title": "iperf_web",
+			"description": "iperf_web Server",
+			"note": "iperf_web server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://drivers-pack.ru/wp-content/uploads/2019/03/iperf.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/collector",
+				"stackfile": "Portainer/stack/iperf_web/docker-stack.yml"
+			},
+			"env": [{
+				"name": "enviperf_web",
+				"label": "NA",
+				"description": "NA",
+				"set": "86"
+			}
+			]
+		},
+
+
+		{
+			"type": 3,
+			"title": "mosquitto",
+			"description": "mosquitto Server",
+			"note": "mosquitto server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://mosquitto.org/images/mosquitto-text-side-28.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/collector",
+				"stackfile": "Portainer/stack/mosquitto/docker-stack.yml"
+			},
+			"env": [{
+				"name": "envmosquitto",
+				"label": "NA",
+				"description": "NA",
+				"set": "86"
+			}
+			]
+		},
+
+
+		{
+			"type": 3,
+			"title": "wireshark",
+			"description": "wireshark Server",
+			"note": "wireshark server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://www.etecenter.com/images/wireshark.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/collector",
+				"stackfile": "Portainer/stack/wireshark/docker-stack.yml"
+			},
+			"env": [{
+				"name": "envmwireshark",
+				"label": "NA",
+				"description": "NA",
+				"set": "86"
+			}
+			]
+		},
+
+		{
+			"type": 3,
+			"title": "zabbix_agent",
+			"description": "zabbix_agent Server",
+			"note": "zabbix_agent server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/collector",
+				"stackfile": "Portainer/stack/zabbix_agent/docker-stack.yml"
+			},
+			"env": [{
+				"name": "envzabbix_agent",
+				"label": "NA",
+				"description": "NA",
+				"set": "86"
+			}
+			]
+		},		
+
+		{
+			"type": 3,
+			"title": "zabbix_proxy",
+			"description": "zabbix_proxy Server",
+			"note": "zabbix_proxy server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/collector",
+				"stackfile": "Portainer/stack/zabbix_proxy/docker-stack.yml"
+			},
+			"env": [{
+				"name": "envzabbix_proxy",
+				"label": "NA",
+				"description": "NA",
+				"set": "86"
+			}
+			]
+		},	
+
+		{
+			"type": 3,
+			"title": "portainer_agent",
+			"description": "portainer_agent Server",
+			"note": "portainer_agent server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://www.portainer.io/hubfs/Brand%20Assets/Logos/Portainer%20Logo%20Solid%20All%20-%20Blue%20no%20padding.svg",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/collector",
+				"stackfile": "Portainer/stack/portainer_agent/docker-stack.yml"
+			},
+			"env": [{
+				"name": "envportainer_agenty",
+				"label": "NA",
+				"description": "NA",
+				"set": "86"
+			}
+			]
+		}
+
+	]
+}

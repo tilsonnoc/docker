@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+    vector:
+        network_mode: cnet
+        volumes:
+            - '/opt/docker_data/vector/vector.toml:/etc/vector/vector.toml:ro'
+        ports:
+            - '8383:8383'
+            - '8686:8686'
+            - '514:514/udp'
+        image: 'timberio/vector:0.12.X-debian'

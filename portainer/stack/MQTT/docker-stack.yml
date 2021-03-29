@@ -1,0 +1,12 @@
+version: '3'
+services:
+    eclipse-mosquitto:
+        network_mode: cnet
+        ports:
+            - '1883:1883'
+            - '9001:9001'
+        volumes:
+            - '/opt/docker_data/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf'
+            - /opt/docker_data/mosquitto/data:/mosquitto/data/
+            - /opt/docker_data/mosquitto/log:/mosquitto/log/
+        image: eclipse-mosquitto

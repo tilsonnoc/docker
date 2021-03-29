@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    zabbix-agent:
+        network_mode: cnet
+        container_name: XXXXX-zabbix-agent
+        environment:
+            - ZBX_HOSTNAME=collector
+            - ZBX_SERVER_HOST=127.0.0.1
+        image: zabbix/zabbix-agent:ubuntu-5.2-latest

@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+    run:
+        container_name: Tilson-NOC-zabbix-proxy-sqlite3
+        network_mode: cnet
+        environment:
+            - ZBX_ENABLEREMOTECOMMANDS=1
+            - ZBX_HISTORYCACHESIZE=32M
+            - ZBX_PROXYOFFLINEBUFFER=168
+            - ZBX_CACHESIZE=32M
+            - ZBX_STARTPOLLERS=10
+            - ZBX_HOSTNAME=Collector_Zabbix_Proxy
+            - ZBX_SERVER_HOST=10.1.1.1
+        image: 'zabbix/zabbix-proxy-sqlite3:ubuntu-5.2-latest'
