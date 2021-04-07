@@ -304,7 +304,7 @@
 			"platform": "linux",
 			"repository": {
 				"url": "https://github.com/tilsonnoc/docker",
-				"stackfile": "portainer/stack/loki/docker-stack.yml"
+				"stackfile": "portainer/stack/loki_server/docker-stack.yml"
 			},
 			"env": [
 				{
