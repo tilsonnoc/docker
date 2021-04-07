@@ -1,5 +1,7 @@
+version: '3.3'
 services:
   loki:
+    network_mode: cnet
     image: grafana/loki:2.0.0
     ports:
       - "3100:3100"

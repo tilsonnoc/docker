@@ -1,6 +1,7 @@
 services:
 
   promtail:
+    network_mode: cnet
     image: grafana/promtail:2.0.0
     volumes:
       - /var/log:/var/log
