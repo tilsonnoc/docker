@@ -1,0 +1,9 @@
+services:
+
+  promtail:
+    image: grafana/promtail:2.0.0
+    volumes:
+      - /var/log:/var/log
+    command: -config.file=/opt/docker_data/promtail/config.yml
+    networks:
+      - cnet

@@ -290,6 +290,102 @@
 		},
 
 
+
+
+		{
+			"type": 3,
+			"title": "loki server",
+			"description": "loki server",
+			"note": "loki server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/loki/docker-stack.yml"
+			},
+			"env": [
+				{
+					"name": "envloki_port",
+					"label": "Not Set Yet",
+					"description": "NA",
+					"set": "86"
+				}
+			]
+		},
+
+		{
+			"type": 3,
+			"title": "promtail server",
+			"description": "promtail server",
+			"note": "promtail server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/promtail/docker-stack.yml"
+			},
+			"env": [
+				{
+					"name": "envpromtail_port",
+					"label": "Not Set Yet",
+					"description": "NA",
+					"set": "86"
+				}
+			]
+		},
+
+
+		{
+			"type": 3,
+			"title": "vector server",
+			"description": "vector server",
+			"note": "vector server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/vector/docker-stack.yml"
+			},
+			"env": [
+				{
+					"name": "envvector_port",
+					"label": "Not Set Yet",
+					"description": "NA",
+					"set": "86"
+				}
+			]
+		},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		{
 			"type": 3,
 			"title": "unifipoller",
