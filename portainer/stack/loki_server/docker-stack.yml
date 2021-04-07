@@ -5,5 +5,7 @@ services:
     image: grafana/loki:2.0.0
     ports:
       - "3100:3100"
-    command: -config.file="/opt/docker_data/loki/loki-config.yaml"
+    command: -config.file=/config/loki-config.yaml
+    volumes:
+            - '/opt/docker_data/loki/loki-config.yaml:/config/loki-config.yaml'
                           
