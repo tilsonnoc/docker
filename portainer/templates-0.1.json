@@ -365,7 +365,29 @@
 			]
 		},
 
-
+		{
+			"type": 3,
+			"title": "ELK stack",
+			"description": "ELK stack",
+			"note": "ELK stack  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/elastiflow/docker-stack.yml"
+			},
+			"env": [
+				{
+					"name": "envvector_port",
+					"label": "Not Set Yet",
+					"description": "NA",
+					"set": "86"
+				}
+			]
+		},
 
 
 
