@@ -32,6 +32,8 @@ services:
       nproc: 8192
       fsize: -1
     network_mode: cnet
+    ports:
+      - 9200:9200'
     volumes:
       # You will need to create the path and permissions on the local file system where Elasticsearch will store data.
       # For example...
