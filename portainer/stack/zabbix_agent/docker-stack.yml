@@ -4,12 +4,8 @@ services:
         user: root
         privileged: true
         network_mode: cnet
-        container_name: grafana-clients-zabbix-agent
-        volumes:
-#            - '/root/docker/zabbix/mounts/agent/etc-zabbix_agentd.d/:/etc/zabbix/zabbix_agentd.d/'
-#            - '/root/docker/zabbix/mounts/agent/var_lib_modules/:/var/lib/zabbix/modules/'
-#            - '/root/docker/zabbix/mounts/agent/var_lib_enc/:/var/lib/zabbix/enc/'
-            - '/var/run/docker.sock:/var/run/docker.sock'
+        container_name: zabbix2-agent
+            
         ports:
         - 10050:10050
         environment:
@@ -58,28 +54,10 @@ services:
 #            - ZBX_ALLOWKEY= # Available since 5.0.0
 
 
-
         volumes:
                 - "/opt/docker_data/zabbix_agent2/zabbix_agentd.d:/etc/zabbix/zabbix_agentd.d" # The volume allows include *.conf files and extend Zabbix agent 2 using UserParameter feature.
                 - "/opt/docker_data/zabbix_agent2/enc:/var/lib/zabbix/enc" # The volume is used to store TLS related files. These file names are specified using ZBX_TLSCAFILE, ZBX_TLSCRLFILE, ZBX_TLSKEY_FILE and ZBX_TLSPSKFILE variables.
                 - "/opt/docker_data/zabbix_agent2/buffer:/var/lib/zabbix/buffer" # The volume is used to store the file, where Zabbix Agent2 should keep SQLite database. To enable the feature specify ZBX_ENABLEPERSISTENTBUFFER=true. Available since 5.0.0.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                - '/var/run/docker.sock:/var/run/docker.sock' 
 
         image: zabbix/zabbix-agent2:latest
