@@ -69,15 +69,15 @@ services:
 
 
         volumes:
-- "/opt/docker_data/zabbix_proxy/externalscripts:/usr/lib/zabbix/externalscripts"   # The volume is used by External checks (type of items). It is ExternalScripts parameter in zabbix_proxy.conf.
-- "/opt/docker_data/zabbix_proxy/modules:/var/lib/zabbix/modules" # The volume allows load additional modules and extend Zabbix proxy using LoadModule feature.
-- "/opt/docker_data/zabbix_proxy/enc:/var/lib/zabbix/enc" # The volume is used to store TLS related files. These file names are specified using ZBX_TLSCAFILE, ZBX_TLSCRLFILE, ZBX_TLSKEY_FILE and ZBX_TLSPSKFILE variables.
-- "/opt/docker_data/zabbix_proxy/ssh_keys:/var/lib/zabbix/ssh_keys" # The volume is used as location of public and private keys for SSH checks and actions. It is SSHKeyLocation parameter in zabbix_proxy.conf.
-- "/opt/docker_data/zabbix_proxy/ssl/certs:/var/lib/zabbix/ssl/certs" # The volume is used as location of of SSL client certificate files for client authentication. It is SSLCertLocation parameter in zabbix_proxy.conf.
-- "/opt/docker_data/zabbix_proxy/ssl/keys:/var/lib/zabbix/ssl/keys" # The volume is used as location of SSL private key files for client authentication. It is SSLKeyLocation parameter in zabbix_proxy.conf.
-- "/opt/docker_data/zabbix_proxy/ssl/ssl_ca:/var/lib/zabbix/ssl/ssl_ca" # The volume is used as location of certificate authority (CA) files for SSL server certificate verification. It is SSLCALocation parameter in zabbix_proxy.conf.
-- "/opt/docker_data/zabbix_proxy/snmptraps:/var/lib/zabbix/snmptraps" # The volume is used as location of snmptraps.log file. It could be shared by zabbix-snmptraps container and inherited using volumes_from Docker option while creating new instance of Zabbix proxy. SNMP traps processing feature could be enabled using shared volume and switched ZBX_ENABLE_SNMP_TRAPS environment variable to true.
-- "/opt/docker_data/zabbix_proxy/mibs:/var/lib/zabbix/mibs" # The volume allows to add new MIB files. It does not support subdirectories, all MIBs must be placed to /var/lib/zabbix/mibs.
+                - "/opt/docker_data/zabbix_proxy/externalscripts:/usr/lib/zabbix/externalscripts"   # The volume is used by External checks (type of items). It is ExternalScripts parameter in zabbix_proxy.conf.
+                - "/opt/docker_data/zabbix_proxy/modules:/var/lib/zabbix/modules" # The volume allows load additional modules and extend Zabbix proxy using LoadModule feature.
+                - "/opt/docker_data/zabbix_proxy/enc:/var/lib/zabbix/enc" # The volume is used to store TLS related files. These file names are specified using ZBX_TLSCAFILE, ZBX_TLSCRLFILE, ZBX_TLSKEY_FILE and ZBX_TLSPSKFILE variables.
+                - "/opt/docker_data/zabbix_proxy/ssh_keys:/var/lib/zabbix/ssh_keys" # The volume is used as location of public and private keys for SSH checks and actions. It is SSHKeyLocation parameter in zabbix_proxy.conf.
+                - "/opt/docker_data/zabbix_proxy/ssl/certs:/var/lib/zabbix/ssl/certs" # The volume is used as location of of SSL client certificate files for client authentication. It is SSLCertLocation parameter in zabbix_proxy.conf.
+                - "/opt/docker_data/zabbix_proxy/ssl/keys:/var/lib/zabbix/ssl/keys" # The volume is used as location of SSL private key files for client authentication. It is SSLKeyLocation parameter in zabbix_proxy.conf.
+                - "/opt/docker_data/zabbix_proxy/ssl/ssl_ca:/var/lib/zabbix/ssl/ssl_ca" # The volume is used as location of certificate authority (CA) files for SSL server certificate verification. It is SSLCALocation parameter in zabbix_proxy.conf.
+                - "/opt/docker_data/zabbix_proxy/snmptraps:/var/lib/zabbix/snmptraps" # The volume is used as location of snmptraps.log file. It could be shared by zabbix-snmptraps container and inherited using volumes_from Docker option while creating new instance of Zabbix proxy. SNMP traps processing feature could be enabled using shared volume and switched ZBX_ENABLE_SNMP_TRAPS environment variable to true.
+                - "/opt/docker_data/zabbix_proxy/mibs:/var/lib/zabbix/mibs" # The volume allows to add new MIB files. It does not support subdirectories, all MIBs must be placed to /var/lib/zabbix/mibs.
 
 
 
