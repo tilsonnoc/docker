@@ -13,10 +13,11 @@ services:
             - ZBX_PROXYOFFLINEBUFFER=168
             - ZBX_CACHESIZE=32M
             - ZBX_STARTPOLLERS=10
+            - ZBX_DEBUGLEVEL=3
 #            - ZBX_VAULTDBPATH= # Available since 5.2.0
 #            - ZBX_VAULTURL=https://127.0.0.1:8200 # Available since 5.2.0
 #            - VAULT_TOKEN= # Available since 5.2.0
-#            - ZBX_LOGREMOTECOMMANDS=0 # Available since 3.4.0
+            - ZBX_LOGREMOTECOMMANDS=1 # Available since 3.4.0
 #            - ZBX_SOURCEIP=
 #            - ZBX_HOSTNAMEITEM=system.hostname
 #            - ZBX_PROXYLOCALBUFFER=0
@@ -25,7 +26,7 @@ services:
 #            - ZBX_CONFIGFREQUENCY=3600
 #            - ZBX_DATASENDERFREQUENCY=1
 #            - ZBX_STARTPREPROCESSORS=3 # Available since 4.2.0
-#            - ZBX_IPMIPOLLERS=0
+            - ZBX_IPMIPOLLERS=0
 #            - ZBX_STARTPOLLERSUNREACHABLE=1
 #            - ZBX_STARTTRAPPERS=5
 #            - ZBX_STARTPINGERS=1
@@ -33,9 +34,9 @@ services:
 #            - ZBX_STARTHTTPPOLLERS=1
 #            - ZBX_JAVAGATEWAY=zabbix-java-gateway
 #            - ZBX_JAVAGATEWAYPORT=10052
-#            - ZBX_STARTJAVAPOLLERS=0
+            - ZBX_STARTJAVAPOLLERS=0
 #            - ZBX_STATSALLOWEDIP= # Available since 4.0.5
-#            - ZBX_STARTVMWARECOLLECTORS=0
+            - ZBX_STARTVMWARECOLLECTORS=0
 #            - ZBX_VMWAREFREQUENCY=60
 #            - ZBX_VMWAREPERFFREQUENCY=60
 #            - ZBX_VMWARECACHESIZE=8M
