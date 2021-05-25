@@ -366,7 +366,29 @@
 		},
 
 		
-
+		{
+			"type": 3,
+			"title": "Po server",
+			"description": "vector server",
+			"note": "vector server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/vector/docker-stack.yml"
+			},
+			"env": [
+				{
+					"name": "envvector_port",
+					"label": "Not Set Yet",
+					"description": "NA",
+					"set": "86"
+				}
+			]
+		},
 
 
 
