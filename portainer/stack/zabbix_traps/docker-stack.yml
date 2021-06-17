@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+    run:
+        container_name: Tilson-NOC-zabbix-traps
+        network_mode: cnet
+        ports:
+           - "162:1162/udp"   # Enable for zabbix traps
+        environment:
+            - ZBX_DEBUGLEVEL=3
+            - ZBX_ENABLE_SNMP_TRAPS=true
+
+# make sure that volume has write access in the container 
+        volumes:
+                - "/opt/docker_data/zabbix_proxy/snmptraps:/var/lib/zabbix/snmptraps" # The volume is used as location of snmptraps.log file. It could be shared by zabbix-snmptraps container and inherited using volumes_from Docker option while creating new instance of Zabbix proxy. SNMP traps processing feature could be enabled using shared volume and switched ZBX_ENABLE_SNMP_TRAPS environment variable to true.
+                - "/opt/docker_data/zabbix_proxy/mibs:/var/lib/zabbix/mibs" # The volume allows to add new MIB files. It does not support subdirectories, all MIBs must be placed to /var/lib/zabbix/mibs.
+
+        image: 'zabbix/zabbix-snmptraps:ubuntu-5.2-latest'

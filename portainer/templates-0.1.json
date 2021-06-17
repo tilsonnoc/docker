@@ -184,6 +184,33 @@
 				}
 			]
 		},
+
+		{
+			"type": 3,
+			"title": "zabbix_traps",
+			"description": "zabbix_traps Server",
+			"note": "zabbix_traps server  ",
+			"categories": [
+				"NOC"
+			],
+			"logo": "https://assets.zabbix.com/img/logo/zabbix_logo_500x131.png",
+			"platform": "linux",
+			"repository": {
+				"url": "https://github.com/tilsonnoc/docker",
+				"stackfile": "portainer/stack/zabbix_traps/docker-stack.yml"
+			},
+			"env": [
+				{
+					"name": "envzabbix_traps",
+					"label": "NA",
+					"description": "NA",
+					"set": "86"
+				}
+			]
+		},
+
+
+
 		{
 			"type": 3,
 			"title": "zabbix_proxy",

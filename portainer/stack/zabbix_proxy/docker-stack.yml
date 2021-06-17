@@ -5,7 +5,6 @@ services:
         network_mode: cnet
         ports:
             - "10051:10051"
-#            - "162:162/udp"   # Enable for zabbix traps
         environment:
             - ZBX_SERVER_HOST=10.1.1.1
             - ZBX_HOSTNAME=Collector_Zabbix_Proxy      
@@ -15,6 +14,7 @@ services:
             - ZBX_CACHESIZE=32M
             - ZBX_STARTPOLLERS=10
             - ZBX_DEBUGLEVEL=3
+#            - ZBX_ENABLE_SNMP_TRAPS=false
 #            - ZBX_VAULTDBPATH= # Available since 5.2.0
 #            - ZBX_VAULTURL=https://127.0.0.1:8200 # Available since 5.2.0
 #            - VAULT_TOKEN= # Available since 5.2.0
@@ -42,7 +42,6 @@ services:
 #            - ZBX_VMWAREPERFFREQUENCY=60
 #            - ZBX_VMWARECACHESIZE=8M
 #            - ZBX_VMWARETIMEOUT=10
-#            - ZBX_ENABLE_SNMP_TRAPS=false
 #            - ZBX_LISTENIP=
 #            - ZBX_HOUSEKEEPINGFREQUENCY=1
 #            - ZBX_CACHESIZE=8M
